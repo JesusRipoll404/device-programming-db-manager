@@ -1,0 +1,6 @@
+PyQt5==5.15.11
+psycopg2==2.9.10
+python-dotenv==1.0.1
+
+# Solo necesario para generar el ejecutable con build.bat / app.spec
+pyinstaller==6.11.0

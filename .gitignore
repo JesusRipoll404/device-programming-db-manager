@@ -1,0 +1,34 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Bytecode / cache Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Configuración local con datos sensibles
+.env
+
+# Build / distribución (PyInstaller)
+build/
+dist/
+*.spec.bak
+
+# Logs
+*.log
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
+
+# Checklist interna de redacción (contiene los términos reales eliminados)
+redaction-terms.txt
+
+# Icono/branding originales (no incluidos en el repositorio, ver README)
+app_icon.ico
