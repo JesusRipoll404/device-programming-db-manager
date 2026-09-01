@@ -1,4 +1,6 @@
-"""Acceso a PostgreSQL para el administrador de base de datos de programación
+"""Copyright (c) 2026 Jesus Ripoll. Licensed under the MIT License (see LICENSE).
+
+Acceso a PostgreSQL para el administrador de base de datos de programación
 de dispositivos: catálogo de referencias/versiones (`circuits`), histórico de
 operaciones de programación (`operations`) y reporte de incidencias
 (`problems`).

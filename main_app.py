@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Jesus Ripoll. Licensed under the MIT License (see LICENSE).
+
 import os
 import sys
 from PyQt5.QtWidgets import (
