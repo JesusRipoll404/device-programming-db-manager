@@ -7,8 +7,8 @@ Descripción funcional de los módulos, escrita para este repositorio público
 
 Esta aplicación es una herramienta de administración de base de datos,
 complementaria y **separada** de la suite de programación/verificación en
-planta (otro repositorio de este mismo autor). Mientras que la suite de
-producción solo lee la base de datos para programar dispositivos, este
+planta (otro repositorio , que habla de la ejecucion del software en si ,esta aplicacion gestiona la base de datos , trazabilidad con report de operaciones y problemas de taller). 
+Mientras que la suite de producción solo lee la base de datos para programar dispositivos, este
 gestor está pensado para un administrador/responsable de calidad que
 necesita:
 
