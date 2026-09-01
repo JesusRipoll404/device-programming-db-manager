@@ -46,7 +46,6 @@ módulo a módulo del flujo completo.
 |---|---|
 | `main_app.py` | Punto de entrada, ventana principal (PyQt5) y las tres vistas (Circuits/Reports/Problems) |
 | `database_manager.py` | Acceso a PostgreSQL (CRUD circuits/operations/problems) y validación de usuario |
-| `docs/schema.sql` | Esquema de ejemplo con datos dummy para poder ejecutar la app |
 
 ## Puesta en marcha
 
@@ -68,10 +67,11 @@ pip install -r requirements.txt
 1. Copia `.env.example` a `.env` y ajusta host/puerto/base/usuario/contraseña
    de PostgreSQL, así como la lista de usuarios autorizados
    (`ALLOWED_USERS`).
-2. Crea el esquema de base de datos con datos de ejemplo:
-   ```bash
-   psql -U postgres -d programmer_db -f docs/schema.sql
-   ```
+2. Crea en tu PostgreSQL las tablas `circuits`, `operations` y `problems`
+   con las columnas usadas por la aplicación (ver
+   [`docs/architecture.md`](docs/architecture.md) y las consultas SQL en
+   `database_manager.py`). Este repositorio no incluye un script de esquema
+   ni datos de ejemplo.
 
 ### Ejecución
 

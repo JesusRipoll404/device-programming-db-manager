@@ -28,7 +28,7 @@ necesita:
    `ProgrammingDatabase` con las credenciales leídas de variables de entorno
    (`DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`; ver
    `.env.example`).
-3. **Circuits** (tabla `circuits`, ver `docs/schema.sql`): cada referencia
+3. **Circuits** (tabla `circuits`): cada referencia
    guarda sus versiones históricas como listas separadas por `|` en las
    columnas `microcontroller`, `hex`, `programmer`, `version` y `family`
    (parseadas por `CircuitsReader`). La UI permite:
@@ -59,8 +59,10 @@ respaldo local en CSV (`create_local_copy`, `get_last_backup`).
 
 ## Qué se ha quedado fuera de este repositorio (a propósito)
 
-- El esquema real de base de datos y cualquier dato de producción (sustituido
-  por `docs/schema.sql`, con datos dummy).
+- El esquema real de base de datos y cualquier dato de producción. Este
+  repositorio no incluye un script de esquema; las columnas usadas por cada
+  tabla (`circuits`, `operations`, `problems`) están documentadas más arriba
+  y en las consultas SQL de `database_manager.py`.
 - Credenciales, IP y nombre real del servidor PostgreSQL.
 - La lista real de usuarios de Windows autorizados (nombres de empleados).
 - El icono de aplicación original.

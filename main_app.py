@@ -162,9 +162,9 @@ class MainWindow(QMainWindow):
         programmer.addItems(["", "PIC", "RENESAS", "AVR", "PIC-CUSTOM"])
         add_row(2, "Programmer", programmer)
 
-        # Nombres de familia de ejemplo (catálogo dummy, ver docs/schema.sql).
-        # En el proyecto original correspondían a nombres de familia de
-        # producto internos.
+        # Nombres de familia de ejemplo (catálogo dummy, sin script de esquema
+        # en este repositorio). En el proyecto original correspondían a
+        # nombres de familia de producto internos.
         family = QComboBox()
         family.addItems(["", "FAMILY_A", "FAMILY_B", "FAMILY_C", "FAMILY_D", "FAMILY_E", "FAMILY_F", "FAMILY_G", "FAMILY_H"])
         add_row(3, "Family", family)
